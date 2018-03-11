@@ -1,12 +1,11 @@
-<?php include('controle/sessao.php');?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Inicio</title>
-	<?php include('includes/head.php') ?>
+	<?php include('../includes/head.php') ?>
 </head>
 <body>
-	<?php include('includes/menu_p_fisica.php') ?>
+	<?php include('../includes/menu.php') ?>
 	<div class="container">		
 		<div class="row">
 			

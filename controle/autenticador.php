@@ -11,7 +11,7 @@ if ($row >0){
 	session_start();
 	$_SESSION['usuario'] = $_POST['usuario'];
 	$_SESSION['senha'] = $_POST['senha'];
-	header("Location: ../index_p_fisica.php");
+	header("Location: ../cliente/index_cliente.php");
 }else{
 	echo "<script>alert('Ops! Seus dados estão incorretos!'); history.back();</script>";
 }

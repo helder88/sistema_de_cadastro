@@ -1,4 +1,4 @@
-<?php include('controle/conexao.php') ?>
+<?php include('../controle/conexao.php') ?>
 <?php 
 	 $sql= $conn -> query("select * from estado") or die(mysql_error());
 	 $row = $sql->num_rows;
@@ -7,15 +7,15 @@
 <html>
 <head>
 	<title>Cadastro de Pessoa Fiísca</title>
-	<?php include('includes/head.php') ?>
+	<?php include('../includes/head.php') ?>
 </head>
 <body>	
-	<?php include('includes/menu.php') ?>
+	<?php include('../includes/menu.php') ?>
 	<div class="container">		
 		<div class="row form-cadastro">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
-				<form action="controle/cadastrar.php" method="post" enctype="multpart/form-data">
+				<form action="../controle/cadastrar.php" method="post" enctype="multpart/form-data">
 					<div class="form-group row">
 					  	<label class="col-md-3" for="usuario">Usuário:</label> 
 						 <input id="usuario" name="usuario" type="text" class="col-md-4" maxlength="15" required>						 
@@ -82,11 +82,11 @@
 					</div>
 					<div class="row" >
 						<label class="col-md-4">Termo de Adesão</label> 
-						<iframe src="documentos/termo.html" width="98%" height="70px" style="margin-left: 1.8%;"></iframe>
+						<iframe src="../documentos/termo.html" width="98%" height="70px" style="margin-left: 1.8%;"></iframe>
 					</div>
 					<div class="form-group row">
 	    				<label class="col-md-12">
-	      					<input type="checkbox" value="sim" required> Estou ciente e de acordo com o <a target="_blank" href="documentos/termo.html">TERMO DE ADESÃO</a>
+	      					<input type="checkbox" value="sim" required> Estou ciente e de acordo com o <a target="_blank" href="../documentos/termo.html">TERMO DE ADESÃO</a>
 	    				</label>
   					</div>
   					<div class="form-group row">
@@ -99,6 +99,7 @@
 			</div>
 		</div>
 	</div>
+	<?php include('../includes/footer.php');?>
 	<script type="text/javascript">
 		//exibir os dados inseridos no CPF/CNPJ ao retornar, caso usuario ou e-mail já exista.
 		window.onload = function(){		
@@ -116,7 +117,7 @@
 		    var id = $("#uf").val();
 			$.ajax({
 				type:"POST",
-				url:"controle/cidades.php?id="+id,
+				url:"../controle/cidades.php?id="+id,
 				dataType:"text",
 				success: function(res){
 					$("#municipio").children(".cidade").remove();

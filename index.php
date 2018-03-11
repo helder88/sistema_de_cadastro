@@ -1,15 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Inicio</title>
-	<?php include('includes/head.php') ?>
-</head>
-<body>
-	<?php include('includes/menu.php') ?>
-	<div class="container">		
-		<div class="row">
-			
-		</div>
-	</div>
-</body>
-</html>
+<meta http-equiv="refresh" content="0, url= geral/index.php">

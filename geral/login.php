@@ -2,15 +2,15 @@
 <html>
 <head>
 	<title>Login</title>
-	<?php include('includes/head.php') ?>
+	<?php include('../includes/head.php') ?>
 </head>
 <body>
-	<?php include('includes/menu.php') ?>
-	<div class="container">
+	<?php include('../includes/menu.php') ?>
+	<main class="container">
 		<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-md-4 form-login" style="margin-top: 8%;">
-				<form action="controle/autenticador.php" method="post">
+				<form action="../controle/autenticador.php" method="post">
 					<div class="form-group">
 						<label for="email">Usuário</label>
 						<input type="text" name="usuario" id="usuario" class="form-control" placeholder="Seu usuário" required>
@@ -24,6 +24,7 @@
 				</form>
 			</div>
 		</div>
-	</div>
+	</main>
+	<?php include('../includes/footer.php');?>
 </body>
 </html>

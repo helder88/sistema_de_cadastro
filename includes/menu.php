@@ -12,7 +12,7 @@
         		<a class="nav-link" href="cadastro.php">Cadastre-se</a>
       		</li>
       		<li class="nav-item">
-        		<a class="nav-link" href="agendamento.php">Agendamento</a>
+        		<a class="nav-link" href="../cliente/agendamento.php">Agendamento</a>
       		</li>
       		<li class="nav-item">
         		<a class="nav-link" href="login.php">Login</a>

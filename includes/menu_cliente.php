@@ -6,13 +6,13 @@
   	<div class="collapse navbar-collapse" id="navbarNav">
    	 	<ul class="navbar-nav">
       		<li class="nav-item">
-        		<a class="nav-link" href="index_p_fisica.php">Inicio <span class="sr-only">(current)</span></a>
+        		<a class="nav-link" href="index_cliente.php">Inicio <span class="sr-only">(current)</span></a>
       		</li>
       		<li class="nav-item">
         		<a class="nav-link" href="agendamento.php">Agendamento</a>
       		</li>
       		<li class="nav-item">
-        		<a class="nav-link" href="controle/logout.php">Sair</a>
+        		<a class="nav-link" href="../controle/logout.php">Sair</a>
       		</li>
     	</ul>
   	</div>

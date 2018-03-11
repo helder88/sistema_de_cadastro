@@ -1,6 +1,6 @@
 <?php 
-	include('controle/conexao.php');
-	include('controle/sessao.php');
+	include('../controle/conexao.php');
+	include('../controle/sessao.php');
 ?>
 <?php 
 	$sql= $conn -> query("select `data` from agenda");
@@ -8,11 +8,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<?php include('includes/head.php') ?>
+	<?php include('../includes/head.php') ?>
 </head>
 <body>
-	<?php include('includes/menu_p_fisica.php') ?>
-	<div class="container">
+	<?php include('../includes/menu_cliente.php') ?>
+	<main class="container">
 		<div class="row justify-content-center">			
 			<div class="col-md-12 row justify-content-center">
 				<h3 class="mt-4 col-md-12">Agora faça seu agendamento</h3>
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-		<form action="controle/agendar.php" method="post">
+		<form action="../controle/agendar.php" method="post">
 		  	<div class="row form-conhecimento"> <!-- Fomulario do como tomou conhecimento da empresa-->
 		  		<label class="col-md-12"><strong>Favor informar como tomou conhecimento ACSERT SOLUÇÕES EMPRESARIAIS</strong></label>
 			  	<div class="col">
@@ -157,8 +157,8 @@
 		    	</div>
 		    </form>
 	  	</div>
-  </div>
-
+  	</main>
+	<?php include('../includes/footer.php');?>
 <script>
 	$(document).ready(function() {
 		$('#calendar').fullCalendar({
@@ -186,7 +186,7 @@
     			$("#data").text(dataformat);
     			$.ajax({
 					type:"POST",
-					url:"controle/hora_age.php?data="+data,
+					url:"../controle/hora_age.php?data="+data,
 					dataType:"text",
 					success: function(res){
 						$("#hora_corres").children(this).remove();

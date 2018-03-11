@@ -4,7 +4,7 @@ $(document).ready(function(e) {
 		var id = $(this).val();
 		$.ajax({
 			type:"POST",
-			url:"controle/cidades.php?id="+id,
+			url:"../controle/cidades.php?id="+id,
 			dataType:"text",
 			success: function(res){
 				$("#municipio").children(".cidade").remove();

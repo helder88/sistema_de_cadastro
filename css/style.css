@@ -8,6 +8,18 @@ button{
 	cursor: pointer;
 }
 
+footer{
+	width: 100% !important;
+	padding: 2.58em 0em;
+}
+
+main{
+	min-height: 90vh;
+    min-height: -webkit-calc(90vh - 90px);
+    min-height:    -moz-calc(90vh - 90px);
+    min-height:         calc(90vh - 90px);
+}
+
 .disp-none{
 	display: none;
 }

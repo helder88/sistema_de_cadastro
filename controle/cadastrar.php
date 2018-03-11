@@ -66,21 +66,21 @@
 		if($ace_novidade != ""){
 			$conn -> query("INSERT INTO `p_fisica` (`usuario`, `senha`, `nome`, `cpf`,`profissao`, `area_atuacao`, `formacao_acad`, `uf`, `municipio`, `cep`, `endereco`, `n_logradouro`, `complemento`, `telefone`, `celular`, `email`, `site`, `rec_novidades`) VALUES ('$usuario', '$senha', '$nome', '$cpf', '$profissao', '$are_atuacao', '$formacao_acad', '$uf', '$municipio', '$cep', '$endereco', '$logradouro', '$complemento', '$telefone', '$celular', '$email', '$site', '$ace_novidade');") or die("Erro ao inserir");
 			echo "<script>alert('Usuário cadastrado com sucesso!');</script>";
-			echo "<meta http-equiv='refresh' content='0, url=../login.php'>";
+			echo "<meta http-equiv='refresh' content='0, url=../geral/login.php'>";
 		}else{
 			$conn -> query("INSERT INTO `p_fisica` (`usuario`, `senha`, `nome`, `cpf`,`profissao`, `area_atuacao`, `formacao_acad`, `uf`, `municipio`, `cep`, `endereco`, `n_logradouro`, `complemento`, `telefone`, `celular`, `email`, `site`) VALUES ('$usuario', '$senha', '$nome', '$cpf', '$profissao', '$are_atuacao', '$formacao_acad', '$uf', '$municipio', '$cep', '$endereco', '$logradouro', '$complemento', '$telefone', '$celular', '$email', '$site');") or die("Erro ao inserir!");
 			echo "<script>alert('Usuário cadastrado com sucesso!');</script>";
-			echo "<meta http-equiv='refresh' content='0, url=../login.php'>";
+			echo "<meta http-equiv='refresh' content='0, url=../geral/login.php'>";
 		}
 	}elseif($tipo == "cnpj"){
 		if($ace_novidade != ""){
 			$conn -> query("INSERT INTO `p_juridica` (`usuario`, `senha`, `empresa`, `cnpj`, `segmento`, `atividade`, `porte`, `n_funcion`, `p_contato`, `cargo`, `uf`, `municipio`, `cep`, `endereco`, `n_logradouro`, `complemento`, `telefone`, `celular`, `email`, `site`, `rec_novidades`) VALUES ('$usuario', '$senha', '$empresa', '$cnpj', '$segmento', '$atividade', '$porte', '$n_funcion', '$p_contato', '$cargo', '$uf', '$municipio', '$cep', '$endereco', '$logradouro', '$complemento', '$telefone', '$celular', '$email', '$site', '$ace_novidade');") or die("Erro ao inserir!");
 			echo "<script>alert('Empresa cadastrada com sucesso!');</script>";
-			echo "<meta http-equiv='refresh' content='0, url=../login.php'>";
+			echo "<meta http-equiv='refresh' content='0, url=../geral/login.php'>";
 		}else{
 			$conn -> query("INSERT INTO `p_juridica` (`usuario`, `senha`, `empresa`, `cnpj`, `segmento`, `atividade`, `porte`, `n_funcion`, `p_contato`, `cargo`, `uf`, `municipio`, `cep`, `endereco`, `n_logradouro`, `complemento`, `telefone`, `celular`, `email`, `site`) VALUES ('$usuario', '$senha', '$empresa', '$cnpj', '$segmento', '$atividade', '$porte', '$n_funcion', '$p_contato', '$cargo', '$uf', '$municipio', '$cep', '$endereco', '$logradouro', '$complemento', '$telefone', '$celular', '$email', '$site');") or die("Erro ao inserir!");
 			echo "<script>alert('Empresa cadastrada com sucesso!');</script>";
-			echo "<meta http-equiv='refresh' content='0, url=../login.php'>";
+			echo "<meta http-equiv='refresh' content='0, url=../geral/login.php'>";
 		}
 	}else{
 		echo "<script>alert('Erro, tipo de cadastro não selecionado!');</script>";

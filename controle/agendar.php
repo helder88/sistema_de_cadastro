@@ -15,6 +15,6 @@
 	}
 
 	$conn -> query("INSERT INTO `agenda` (`data`, `hora`, `forma_contato`, `forma_conhec`) VALUES ('$date', '$hora', '$contato', '$outro');") or die("Erro ao inserir");
-	echo "<meta http-equiv='refresh' content='0, url=../agendamento.php'>";
+	echo "<meta http-equiv='refresh' content='0, url=../cliente/agendamento.php'>";
 	echo "<script>alert('Agendamento realizado com sucesso!');</script>";
  ?>
