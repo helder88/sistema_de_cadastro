@@ -1,0 +1,182 @@
+body {
+	padding: 0;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+}
+
+button{
+	cursor: pointer;
+}
+
+.disp-none{
+	display: none;
+}
+
+.form-login{
+	padding: 20px;
+	box-shadow: 0px 0px 15px #000;
+	border-radius: 10px;
+}
+.text-right{
+	text-align: right;
+}
+
+.form-cadastro{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#slide{
+	border-top: solid 1px #BEBEBE;
+	border-bottom: solid 1px #BEBEBE;
+	width: 102%;
+	margin-bottom: 20px;
+}
+
+.div-tipo-cadastro{	
+	width: 100%;
+	padding-right: 2%;
+	padding-bottom: 10px;
+	display: none;
+}
+.div-dados{	
+	width: 102%;
+	padding-top: 18px;
+	padding-right: 2%;
+}
+
+.link-cadastro{
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+	margin: 0;
+	border: solid 1px #BEBEBE;
+	color: #000;
+}
+
+.link-cadastro:hover{
+	text-decoration: none;
+	background-color: #BEBEBE;
+	border: solid 1px #BEBEBE;
+	color: #fff;
+}
+
+/*calendario e pagina de agendamento*/
+#calendar {
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.fc-view-container{
+	cursor: pointer;
+	height: 0px;
+}
+
+table tbody tr{
+	height: 20px;
+	overflow: hidden;
+}
+
+.td-espaco{
+	width: 2%;
+	border: solid 1px #000;
+}
+
+.td-agend{
+	width: 12%;
+	text-align: center;
+	border: solid 1px #000;
+	font-family: Tahoma;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.td-disable{
+	width: 14%;
+	text-align: center;
+	border: solid 1px #000;
+	font-family: Tahoma;
+	background: #8B8989;
+	opacity: .8;
+	pointer-events: none;
+}
+
+.td-turno{
+	width: 14%;
+	text-align: center;
+	border: solid 1px #000;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+.td-hora{
+	width: 14%;
+	text-align: center;
+	border: solid 1px #000;
+	font-family: Tahoma;
+	cursor: pointer;
+}
+
+.open-modal{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.md-ag-title{ /*Titulo do modal agenda*/
+	font-family: Tahoma;
+	margin-left: 5%;
+}
+
+.mdb-ag-dados{/*dados do agendamento no modal body da agenda*/
+	font-family: Tahoma;
+	font-size: 12pt;
+}
+
+.ag-titulo{/*label para a exibição dos dados no modal body*/
+	font-family: Tahoma;
+	font-weight: bold;
+	margin-left: 5%;
+	font-size: 12pt;
+}
+
+.div-btn-conf{
+	padding-left: 8%;
+}
+
+.div-btn-canc{
+	padding-right: 8%;
+}
+
+.footer-modal{
+	padding-bottom: 20px;
+	padding-top:  20px;
+	border-top: solid 1px rgba(0, 0, 0, .1);
+}
+
+.form-conhecimento{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border: solid 1px #000;
+	margin: 0;
+	margin-top: 50px;
+}
+
+.form-conhecimento div{
+	padding-left: 5%;
+}
+
+.ipt-check{
+	background: none;
+	border: none;
+	border-bottom: solid 1px #000; 
+}
+
+.ipt-check:focus{
+	background: none;
+	border: none;
+	box-shadow: none;
+	border-bottom: solid 1px #000;
+	outline:none;
+}
+/*----------------------------*/
